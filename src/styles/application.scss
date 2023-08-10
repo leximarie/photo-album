@@ -1,0 +1,35 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+.img-hover {
+    position: relative;
+    overflow: hidden;
+    max-width: 150px;
+    padding: 0;
+
+    .img-description {
+        position: absolute;
+        color: white;
+        background-image: linear-gradient(to bottom, transparent 0%, rgba(131, 123, 123, 0.5) 50%, #000000c8 100%);
+    }
+
+    &:hover {
+        .img-description {
+            transform: translate(0%, -100%);
+        }
+    }
+}
+
+.text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.page-loading {
+    height: 50vh;
+    .spinner-border {
+        height: 6rem;
+        width: 6rem;
+    }
+}
